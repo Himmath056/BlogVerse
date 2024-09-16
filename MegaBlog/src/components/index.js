@@ -3,10 +3,16 @@ import Footer from "./footer/Footer";
 import Logo from "./Logo";
 import Container from "./container/Container"
 import LogoutBtn from "./header/LogoutBtn";
+import Button from './Button'
+import Login from './Input'
+
 export {
     Header,
     Footer,
     Logo,
     Container,
+    LogoutBtn,
+    Button,
+    Login,
 }
 

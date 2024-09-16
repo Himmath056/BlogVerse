@@ -38,7 +38,7 @@ export class AuthService{
         }
     }
 
-    // 
+    //  get the current user
     async getCurrentUser(){
         try {
             return await this.account.get();

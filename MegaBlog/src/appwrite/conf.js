@@ -18,7 +18,11 @@ export class Service{
     // create post
     async createPost({title, slug, content, featuredImage, status , userId}){
         try {
-            return await  this.databases.createDocument(conf.appwriteDatabaseId, conf.appwriteCollectionId, slug, {
+            return await  this.databases.createDocument(
+                conf.appwriteDatabaseId,
+                 conf.appwriteCollectionId, 
+                 slug,
+                  {
                     title,
                     content,
                     featuredImage,
@@ -26,7 +30,7 @@ export class Service{
                     userId,
             } 
 
-            )
+          )
         } catch (error) {
             console.log("Appwrite service :: getCurrentUser :: error",error);
             
